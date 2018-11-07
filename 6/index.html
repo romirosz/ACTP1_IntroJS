@@ -27,6 +27,21 @@ Para la solución puedes inspirarte en: https://codepen.io/gabrieleromanato/pen/
     <title></title>
   </head>
   <body>
+  	<h1>¿Cómo lo supo?</h1>
+  	<img src="mono.jpg" alt="">
+  	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(document).bind("contextmenu",function(e){
+				return false;
+			});
 
+			$("img").mousedown(function(){
+				alert("No puedes descargar esta imagen :(");
+			});
+			
+		});
+	</script>
   </body>
 </html>

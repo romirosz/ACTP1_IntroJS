@@ -62,5 +62,33 @@
 
       </fieldset>
     </form>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+     <script>
+
+      $(document).ready(function(){
+        $("h1").css("color","red");
+    
+       $(".section-1").css("background-color","yellow");
+     
+        
+       $(".counter").on("click",function(){
+        var counter = parseInt($(".counter").text());
+        var resultado = counter + 10;
+        $(".counter").html( resultado);
+        console.log(counter)
+
+       })
+
+       $("#row-3").on("click", function(){
+         $("#row-3").css("background-color","gray");
+       });
+
+       $("section h1").css("font-size","2em");
+
+       $(".row:last-child").css("background-color","red");
+
+     });
+     </script>
   </body>
 </html>
